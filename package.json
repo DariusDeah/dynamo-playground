@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "pull:db": "docker pull amazon/dynamodb-local ",
-    "start:db": "docker run -p 8000:8000 amazon/dynamodb-local",
+    "start:db": "docker run -d -p 8000:8000 amazon/dynamodb-local ",
     "kill:db": "docker kill amazon/dynamodb-local",
     "dev": "node ./src/index.js --log-level=error "
   },
