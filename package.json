@@ -1,0 +1,22 @@
+{
+  "name": "dynamo-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "pull:db": "docker pull amazon/dynamodb-local ",
+    "start:db": "docker run -p 8000:8000 amazon/dynamodb-local",
+    "kill:db": "docker kill amazon/dynamodb-local",
+    "dev": "node ./src/index.js --log-level=error "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "colors": "^1.4.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.159.0"
+  }
+}
